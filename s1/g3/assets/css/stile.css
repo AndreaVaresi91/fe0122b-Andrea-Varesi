@@ -1,0 +1,133 @@
+/* IMPOSTAZIONI GENERALI */
+
+/* HEDER */
+
+/* MAIN *
+
+/* ELEMENTI NEL MAIN */
+
+/* FOOTER */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+hr {
+    display: none;
+}
+
+
+
+
+
+
+header {
+    background-color: teal;
+    font-family: 'Raleway';
+    text-align: center;
+    border-bottom: 2px solid blue;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    color: white;
+
+}
+
+
+header h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+
+}
+
+header h1 span {
+    background-color: white;
+    color: teal;
+}
+
+header h2 {
+    color: #000;
+    font-variant: small-caps;
+    font-size: 1.7rem;
+}
+
+main {
+    padding:  1em;
+}
+
+section {
+    border-bottom: 2px dashed #333;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: teal;
+}
+
+section h3 {
+    font: bold 1.7rem 'Raleway';
+    margin-bottom: 1em;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+figure img {
+    border: 10px solid white;
+    outline: 1px solid grey;
+}
+
+b {font-weight: bold;}
+
+address  {
+    margin-bottom: 2em;
+}
+
+p {margin-bottom: 1.5em;}
+
+blockquote {background-color: rgba(128, 128, 128, 0.335);
+        padding: 1em;
+        border-radius: 10px;
+}
+
+blockquote p {text-align: center;}
+
+strong {color: blue;}
+
+mark {background-color: blue;
+    color: white;}
+
+a {color: red;}    
+
+ul{
+    margin-left: 3em;
+}
+
+dd {margin-left: 3em;}
+
+footer {
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+    border-top: 3px solid blue ;
+}
+
+kbd {color: yellow;}
+footer p {color: white;}
+p small {color: rgba(175, 162, 162, 0.986);}

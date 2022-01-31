@@ -1,0 +1,195 @@
+/* IMPOSTAZIONI GENERALI */
+
+html {
+    font-size: medium;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+    padding: 3rem;
+}
+
+hr {
+    display: none;
+}
+
+.centrini {
+    text-align: center;
+}
+
+.impo {
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+
+.fa-pen-square:before {
+    content: "\f14b"; 
+}
+
+
+code {background-color: rgb(182, 182, 182);
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+
+#vecchio {color: grey;}
+
+#losfondo {color: grey;}
+
+
+
+  
+
+
+
+
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    background-color: rgb(106, 144, 214);
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5rem;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+
+
+header a {
+    color: white;
+    line-height: 1.1em;
+    text-decoration-line: none
+}
+
+
+
+header li {
+    list-style: none;
+}
+
+header li::before {
+
+    content: "=> ";
+    color: white;
+}
+
+header li::after {
+    content: " <=";
+}
+
+/* MAIN */
+
+main {
+    line-height: 1.5;
+    font-size: 1.1em;
+    background-color: white;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.2em;
+    box-shadow: 10px 10px 5px grey;
+}
+
+main h1 {
+    font-size: 2em;
+    padding-bottom: 1.2em;
+
+}
+
+table caption {font-weight: bold;}
+
+thead {background-color: blue;
+    color: white;}
+
+
+
+tr:nth-child(even) {background-color: grey;}
+
+
+
+
+p {
+    padding-bottom: 2rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+iframe {
+    text-align: center;
+    border-radius: 5%;
+    margin-bottom: 2em;
+}
+
+section {background-color: rgb(231, 224, 224);
+margin-bottom: 2em;
+}
+
+section h2 {font-weight: bolder;
+            text-align: center;}
+
+input {border-bottom-style: dashed;}
+
+button {background-color: cadetblue;
+color: white;}
+
+
+
+footer {
+    background-color: rgb(40, 110, 143);
+    padding: 1.2em;
+}
+aside h2 {font-weight: bolder;
+text-align: center;
+margin-bottom: 1.5em;}
+aside div {
+    margin-bottom: 1.2em;
+    background-color: rgb(192, 188, 188);
+    
+}
+
+.datadata {text-align: right;
+padding-right: 2em;}
+
+aside div a p {padding: 2em;}
+
+.cielo {color: rgb(53, 134, 134);
+padding-top: 2em;}
+
+
+p.cielo {color: black;}
+
+a {padding: 2em;}
+
+.fa-calendar-alt:before {
+    content: "\f073"; }
+  footer a {color: palevioletred;}
+   
+
+.stanco {color: white;}
+
+section {padding: 2em;}
+div {padding: 1.5em;}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
