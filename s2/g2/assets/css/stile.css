@@ -281,6 +281,11 @@ footer a {
     
 }
 
+@media print {
+    header, footer, #videotubo, aside, section, .social, .toTop  
+    {display: none;}
+}
 
-
-
+@media print {
+    body {font-size: 2.3rem;}
+}
