@@ -333,15 +333,17 @@ footer a {
 }
 
 
-main {display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas:"article aside" ". section"
-                          
-    }
-
+main {display: grid;grid-template-areas: "article article aside"
+                                         "article article section"
+                                         "article article ." }
+                                         
+      
+       
+      
  .box1 {grid-area: article;}
  .box2 {grid-area: aside; }
- .box3 {grid-area: section;}   
-
+ .box3 {grid-area: section;}  
  
+.box3 {position: sticky;margin-top: 15px;top:350px;
+
+}
