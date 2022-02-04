@@ -20,7 +20,7 @@ main {
 #diverso {
     background: rgb(64, 219, 255);
     background: linear-gradient(90deg, rgba(64, 219, 255, 1) 0%, rgba(165, 154, 173, 1) 100%);
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 11px;
     
@@ -52,6 +52,7 @@ span i {
     font-size: 2em;
 }
 
+ {font-weight: bold;}
 
 section div h3 {
     margin-bottom: 30px;
