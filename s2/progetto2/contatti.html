@@ -30,24 +30,22 @@
   </div>
   </header>
 
-  <main>
+  <main >
     <h2 class="bold">Contatti</h2>
-      <div class="form">
+     <div class="rolla"> <div class="form">
     
    
-     <p>
-        <form name="invio_dati" action="epicode.php" method="post">
-          <input type="text" name="nomecognome" placeholder="Nome e cognome">
-     </p>
+        <form action="post">
+          <fieldset>
+            <input type="text" name="nome" id="nome" placeholder="Nome e cognome"><br>
+            <input type="email" name="email" id="mailcontact" placeholder="Indirizzo valido nome@casella.com"><br>
+            <textarea name="Presentazione" id="presentazione" cols="50" rows="5"
+              placeholder="Scrivi in breve il tuo messaggio"></textarea> <br>
+            <button type="submit" class="send"> <strong>Invia il messaggio</strong> </button>
+          </fieldset>
+        </form>
+
    
-     <p> <input type="text" name="mail" placeholder="indirizzo valido nome@casella.com"></p>
-
-      <textarea name="messaggio" rows="5" cols="50" placeholder="scrivi in breve il tuo messaggio"></textarea></p>
-        
-
-     <p class="button"> <input type="submit" value="invia il messaggio"/></p>
-
-    </form>
   </div>
 
     <aside>
@@ -57,11 +55,11 @@
         <h3>Lavora con noi</h3>
         <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school</p>
     </aside>
-    
+  </div>
   </main>
 
-  <footer>
-    <div>
+  <footer><div>
+  
     <h5>Chi siamo</h5><br>
     <p>Epicode School nasce con l'obiettivo di rivoluzione la formazione in ambito tech.</p></div><br>
      <div><h5>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h5>
@@ -76,9 +74,9 @@
     <div class="lungo">
     <input type="text"><br>
     <a href="contatti.html" class="bottone" target="_blank" id="diverso"> Va bene!</a></div>
-
-    <p>&copy; Epicode Web Developer School - Via Appia 1, 00100 Roma (RM) - Tel 06-12345678 </p></div>
   </footer>
+    <p class="grigio">&copy; Epicode Web Developer School - Via Appia 1, 00100 Roma (RM) - Tel 06-12345678 </p></div>
+ 
 
 </body>
 
