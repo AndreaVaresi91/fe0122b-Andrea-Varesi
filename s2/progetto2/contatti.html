@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/stile.css">
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/stile.css">
- <link rel="stylesheet" href="assets/css/reset.css">
+  
   <title></title>  
   
 </head>
@@ -30,12 +32,21 @@
 
   <main>
     <h2 class="bold">Contatti</h2>
-    <div class="form">
-    <form name="invio_dati" action="epicode.php" method="post">
-      <input type="text" name="nomecognome" placeholder="Nome e cognome">
-      <input type="text" name="mail" placeholder="indirizzo valido nome@casella.com">
-      <textarea name="messaggio" rows="5" cols="50" placeholder="scrivi in breve il tuo messaggio"></textarea>
-      <input type="submit" value="invia il messaggio"/>
+      <div class="form">
+    
+   
+     <p>
+        <form name="invio_dati" action="epicode.php" method="post">
+          <input type="text" name="nomecognome" placeholder="Nome e cognome">
+     </p>
+   
+     <p> <input type="text" name="mail" placeholder="indirizzo valido nome@casella.com"></p>
+
+      <textarea name="messaggio" rows="5" cols="50" placeholder="scrivi in breve il tuo messaggio"></textarea></p>
+        
+
+     <p class="button"> <input type="submit" value="invia il messaggio"/></p>
+
     </form>
   </div>
 
