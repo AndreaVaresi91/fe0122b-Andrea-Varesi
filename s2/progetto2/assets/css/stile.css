@@ -1,0 +1,94 @@
+/* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;;}
+body {font-family:"Fira Sans" sans-serif;
+      line-height: 1.8;
+      font-size: 1.5rem;
+      color: #000;
+}
+section div h3 {margin-bottom: 30px;}
+footer h5 {font-weight: bold;}
+
+span i {color: red;font-size: 2em;}
+main {text-align: center;}
+
+a {text-decoration: none;}
+
+
+#diverso { background: rgb(64,219,255);
+    background: linear-gradient(90deg, rgba(64,219,255,1) 0%, rgba(165,154,173,1) 100%);
+    color: white;
+    text-align: center;
+    margin-top: 11px;}
+
+.button { background: rgb(64,219,255);
+    background: linear-gradient(90deg, rgba(64,219,255,1) 0%, rgba(165,154,173,1) 100%);
+    width: 120px;
+    padding: 1px 12px;
+    color: white;
+    text-align: center;
+    margin-top: 11px;}
+
+div h3 {font-weight: bold;font-size: 1.6em; margin-top:20px;}
+
+#notebook { text-align: center;}
+
+/* HEADER */
+
+
+/* MAIN */
+
+.banner {background-image: url("../images/banner.jpg");
+         background-size: cover;
+         height:35vh;
+         padding:15px;
+         text-align:left;
+         background-position: center center; 
+}
+.banner h1 {font-weight: bold;
+            font-size:50px;
+            color: white;
+            border-width: 1px;
+            margin-bottom: 20px;
+            margin-top: 30px;            
+}
+.banner p {color: white;margin-bottom: 70px;}
+#info {text-decoration: none;}
+
+.margini {margin-top: 30px;}
+.margini div {margin-top: 30px;margin-bottom: 30px;padding: 0 50px; line-height: 1.5em;}
+
+
+section.immagine {margin-top: 30px;}
+
+#sfblu {background-color: rgb(2, 2, 95);color: whitesmoke;
+        height: 250px;padding-top: 123px;}
+
+    
+
+
+/* FOOTER */
+footer {background-color: rgb(229, 226, 226);
+    height: 320px;line-height: 1.5em; }
+footer div {padding: 20px;}    
+   
+
+
+/* tolto dal cssreset regola sua: body:line height 1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    hr {display: none;}
+    }
