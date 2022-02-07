@@ -1,8 +1,17 @@
-a {
+ .btn-primary {
     background-color: $coloredietro;
-     font-size: $font;
+    font-size: $font; border-radius: $borditondi;
+
     &:hover {
         background-color: $hbcolore;
     }
-    
+
+}
+
+.btn-secondary {
+    background-color: $coloredietro;
+    font-size: $font; border-radius: $borditondi;
+
+    &:hover {
+        background-color:$hbcolore;}
 }

@@ -1,8 +1,38 @@
-header {
-  width: 100%; }
-
-a {
+.btn-primary {
   background-color: red;
-  font-size: 50px; }
-  a:hover {
+  font-size: 30px;
+  border-radius: 8%; }
+  .btn-primary:hover {
     background-color: blue; }
+
+.btn-secondary {
+  background-color: red;
+  font-size: 30px;
+  border-radius: 8%; }
+  .btn-secondary:hover {
+    background-color: blue; }
+
+header {
+  width: 100%;
+  background-color: #d6caca; }
+
+.container {
+  display: flex; }
+
+.showcase-content {
+  text-align: center;
+  margin-left: 50px; }
+
+.linea {
+  display: inline;
+  margin: auto; }
+
+nav {
+  position: relative;
+  left: 20px;
+  top: 25px; }
+
+.fotopc {
+  width: 50px;
+  height: 50px;
+  margin-left: 25px; }

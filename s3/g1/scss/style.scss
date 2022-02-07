@@ -1,9 +1,40 @@
 @import 'variabili';
+@import 'bottone';
 
 
 
 header {
-    width: $dimensioni;
+    width: $dimensioni; background-color: $sfondoprimo;
 }
 
-@import 'bottone';
+.container{display: flex;} 
+.showcase-content {text-align: center;
+margin-left: 50px;
+}
+.linea {display: inline; margin: auto;}
+
+nav{position: relative;
+    left: 20px;
+    top: 25px;
+}
+
+
+.fotopc {width:$imglarghezza;
+        height:$imgaltezza;
+        margin-left: 25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
