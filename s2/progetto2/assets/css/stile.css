@@ -16,8 +16,14 @@ body {
       color: rgb(255, 255, 255);
 }
 
-#nome {width:378px ;}
-#mailcontact {width: 378px;}
+#nome {
+      width: 378px;
+}
+
+#mailcontact {
+      width: 378px;
+}
+
 i {
       color: red;
       font-size: 2em;
@@ -194,48 +200,63 @@ nav {
       section.margini {
             display: flex;
       }
-      .coderuno {width: 250px;height: 250px;}
+
+      .coderuno {
+            width: 250px;
+            height: 250px;
+      }
+
       .ruota {
             display: flex;
             margin-bottom: 200px;
-            justify-content: space-around;}
-            header {box-shadow: 2px 2px 10px grey;}
+            justify-content: space-around;
+      }
 
-      .rolla {display: flex;align-items: center;}
-      
-      footer{display: flex; justify-content: space-evenly;}
-     .grigio {background-color: rgb(229, 226, 226);}
+      header {
+            box-shadow: 2px 2px 10px grey;
+      }
 
+      .rolla {
+            display: flex;
+            align-items: center;
+      }
 
-@media screen and (min-width:1200px) {
-     
-      header {box-shadow: 2px 2px 10px grey;}
-     #pcfoto {width:400px; height: 400px;}
-     
-      aside div {display: flex;
-      justify-content: space-evenly;}
+      footer {
+            display: flex;
+            justify-content: space-evenly;
+      }
 
-      .verticale {display: flex; flex-direction: column;
-      ;}
-
-      .rolla {justify-content: space-evenly;}
-
-      .verticale p:hover {transform: rotate(-30deg) scale(1.5,1.5);}
-                      
-
-      
-     
-
-     
+      .grigio {
+            background-color: rgb(229, 226, 226);
+      }
 
 
+      @media screen and (min-width:1200px) {
 
-     
-      
+            header {
+                  box-shadow: 2px 2px 10px grey;
+            }
 
+            #pcfoto {
+                  width: 400px;
+                  height: 400px;
+            }
 
+            aside div {
+                  display: flex;
+                  justify-content: space-evenly;
+            }
 
+            .verticale {
+                  display: flex;
+                  flex-direction: column;
+                  ;
+            }
 
-      
+            .rolla {
+                  justify-content: space-evenly;
+            }
 
-
+            .verticale p:hover {
+                  transform: rotate(-30deg) scale(1.5, 1.5);
+            }
