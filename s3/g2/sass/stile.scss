@@ -1,0 +1,55 @@
+ //variabili//
+$coloresfondo: green;
+ $coloretesto:yellow;
+ $testoprimario: 'Ubuntu', sans-serif;
+
+//mixin//
+ @mixin testa {
+    background-color: $coloresfondo;
+    color: $coloretesto;
+    height: 50px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 2px 5px 5px black;
+    border-radius: 50%;
+
+
+    }
+@mixin alink {
+    color: yellow;
+    text-decoration: none;
+}
+
+@mixin sidebar {background-color: yellow;
+                color: green;
+                box-shadow: 2px 2px 5px;
+                border-radius: 15px;
+                width: 100px;
+                height: 100px;
+}
+
+//foglio di stile//
+body {font-family: $testoprimario;
+    background-color: azure
+}
+
+header {@include testa;
+        li{display: inline;
+            margin:0 30px}        
+}
+a {@include alink}
+
+#main {display: flex;}
+
+h1 {text-align: center;}
+article {width: 90%}
+aside { @include sidebar; margin-top: 50px; margin-left: 20px;}
+   
+   
+      
+
+//mediaquery//
+
+
+
+
