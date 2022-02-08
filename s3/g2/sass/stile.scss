@@ -30,7 +30,7 @@ $coloresfondo: green;
 
 //foglio di stile//
 body {font-family: $testoprimario;
-    background-color: azure
+    background-color: azure;
 }
 
 header {@include testa;
@@ -39,7 +39,7 @@ header {@include testa;
 }
 a {@include alink}
 
-#main {display: flex;}
+
 
 h1 {text-align: center;}
 article {width: 90%}
@@ -52,4 +52,7 @@ aside { @include sidebar; margin-top: 50px; margin-left: 20px;}
 
 
 
+@media screen and(min-width:768px) {
+    #main {display: flex;}
+}
 
