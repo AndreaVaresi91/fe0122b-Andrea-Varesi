@@ -11,6 +11,7 @@
 .colore {color:white}
 
 
+
  body {
      background-image: url(../img/sfondo-repeat.webp);
      background-repeat: repeat;
@@ -25,6 +26,10 @@
  }  
 
  .testa {color:$biscotto;}
+
+ 
+            
+
 
  .lineare {padding: 0 30px;}
 
@@ -99,6 +104,20 @@
          padding-top: 25px;
      }
  }
+
+ //bottone torna su//
+
+  #su {text-decoration: none;
+            background-color: rgba(231, 231, 70, 0.952);
+            font-size: 40px;
+            color: $marrone;
+            border-radius: 50%;
+            border: 1px solid $marrone;
+            position: fixed;
+            right: 5px;
+            top:85vh;
+            
+}
 
  //media query// 
 
