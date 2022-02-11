@@ -1,3 +1,6 @@
+.colore {
+  color: white; }
+
 body {
   background-image: url(/sfondo-repeat.webp);
   background-repeat: repeat;
@@ -7,6 +10,9 @@ header {
   margin-bottom: 30px; }
   header nav {
     color: white; }
+
+.testa {
+  color: bisque; }
 
 .lineare {
   padding: 0 30px; }
@@ -31,6 +37,9 @@ h2 {
   margin: 20px auto;
   border: 1px solid black; }
 
+.mar {
+  color: brown; }
+
 .bordo {
   box-shadow: 5px 5px 10px 5px brown;
   margin-bottom: 30px; }
@@ -52,11 +61,14 @@ aside.carosello {
   text-align: center;
   background-color: bisque; }
 
+.ruota {
+  transform: rotate(180deg); }
+
 .piede {
   width: 100%;
   height: 100px; }
   .piede p {
-    color: white;
+    color: bisque;
     padding-top: 25px; }
 
 @media screen and (max-width: 570px) {

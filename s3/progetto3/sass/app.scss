@@ -1,15 +1,14 @@
+ //funzione//
+ 
  @import "function";
 
 
- @mixin testacoda {
-     background-color: green;
-     color: white;
- }
-
+//variabili//
+ $marrone:brown;
  $biscotto: bisque;
  $ombre: 5px 5px 10px 5px brown;
 
-
+.colore {color:white}
 
 
  body {
@@ -24,6 +23,8 @@
    nav  {color: white;}
     
  }  
+
+ .testa {color:$biscotto;}
 
  .lineare {padding: 0 30px;}
 
@@ -56,6 +57,8 @@
      border: 1px solid black;
  }
 
+ .mar {color: $marrone;}
+
  .bordo {
      box-shadow: $ombre; margin-bottom: 30px;
  }
@@ -79,9 +82,11 @@
      border: 1px solid black;
      margin: 30px auto;
      text-align: center;
-     background-color: bisque;
+     background-color:$biscotto;
      
  }
+
+ .ruota {transform: rotate(180deg);}
 
 
 
@@ -90,7 +95,7 @@
      height: 100px;
 
      p {
-         color: white;
+         color:$biscotto;
          padding-top: 25px;
      }
  }
