@@ -1,41 +1,100 @@
  @import "function";
- 
-
- @mixin testacoda {background-color: green;color: white;}
-
-$biscotto: bisque;
-$ombre:  5px 5px 10px 5px brown;
-
- 
-
- body {background-image: url(/sfondo-repeat.webp);
-        background-repeat: repeat;
-        background-position: center;
-}
- 
- header {margin-bottom: 30px;
-    nav {color: white;}
-       li  a {color: white;}
-}
-.corpo {background-color: $biscotto; box-shadow: $ombre; text-align: center;}
-
-h1 {color: brown; background-color: $biscotto; width:400px; margin: 20px auto; border: 1px solid black;}
-h2 {color: brown; background-color: $biscotto; width:400px; margin: 20px auto; border: 1px solid black;}
-
-.bordo {box-shadow: $ombre;}
 
 
- .container {margin-bottom: 30px;}
+ @mixin testacoda {
+     background-color: green;
+     color: white;
+ }
 
- .card-body {background-color:$biscotto ; box-shadow: $ombre;}
+ $biscotto: bisque;
+ $ombre: 5px 5px 10px 5px brown;
 
- 
 
- aside.carosello {width: 250px; height: 400px;border: 1px solid black;margin:30px auto; text-align: center; background-color: bisque;}
+
+
+ body {
+     background-image: url(/sfondo-repeat.webp);
+     background-repeat: repeat;
+     background-position: center;
+ }
+
+ header {
+     margin-bottom: 30px;
+
+   nav  {color: white;}
     
+ }  
+
+ .lineare {padding: 0 30px;}
 
 
-.piede {width:100%; height: 100px;
-    p {color: white; padding-top: 25px;}
-}
 
+ .corpo {
+     background-color: $biscotto;
+     box-shadow: $ombre;
+     text-align: center;
+     height: 281px; ;
+ }
+
+ h1 {
+     color: brown;
+     background-color: $biscotto;
+     width: 400px;
+     margin: 20px auto;
+     border: 1px solid black;
+ }
+
+ h2 {
+     color: brown;
+     background-color: $biscotto;
+     width: 400px;
+     margin: 20px auto;
+     border: 1px solid black;
+ }
+
+ .bordo {
+     box-shadow: $ombre; margin-bottom: 30px;
+ }
+
+
+ .container {
+     margin-bottom: 30px;
+ }
+
+ .card-body {
+     background-color: $biscotto;
+     box-shadow: $ombre;
+     &:hover {transform: scale(1.1);}
+ }
+
+
+
+ aside.carosello {
+     width: 250px;
+     height: 400px;
+     border: 1px solid black;
+     margin: 30px auto;
+     text-align: center;
+     background-color: bisque;
+     
+ }
+
+
+
+ .piede {
+     width: 100%;
+     height: 100px;
+
+     p {
+         color: white;
+         padding-top: 25px;
+     }
+ }
+
+ //media query//
+
+ @media screen and (max-width:570px) {
+     .bordo {width:100%;}
+     .h {width: 100%;}
+     
+ }

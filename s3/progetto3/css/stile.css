@@ -7,13 +7,15 @@ header {
   margin-bottom: 30px; }
   header nav {
     color: white; }
-  header li a {
-    color: white; }
+
+.lineare {
+  padding: 0 30px; }
 
 .corpo {
   background-color: bisque;
   box-shadow: 5px 5px 10px 5px brown;
-  text-align: center; }
+  text-align: center;
+  height: 281px; }
 
 h1 {
   color: brown;
@@ -30,7 +32,8 @@ h2 {
   border: 1px solid black; }
 
 .bordo {
-  box-shadow: 5px 5px 10px 5px brown; }
+  box-shadow: 5px 5px 10px 5px brown;
+  margin-bottom: 30px; }
 
 .container {
   margin-bottom: 30px; }
@@ -38,6 +41,8 @@ h2 {
 .card-body {
   background-color: bisque;
   box-shadow: 5px 5px 10px 5px brown; }
+  .card-body:hover {
+    transform: scale(1.1); }
 
 aside.carosello {
   width: 250px;
@@ -53,3 +58,9 @@ aside.carosello {
   .piede p {
     color: white;
     padding-top: 25px; }
+
+@media screen and (max-width: 570px) {
+  .bordo {
+    width: 100%; }
+  .h {
+    width: 100%; } }
