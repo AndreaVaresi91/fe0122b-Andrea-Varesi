@@ -18,8 +18,8 @@ header {
   height: 281px; }
 
 h1 {
-  color: brown;
   background-color: bisque;
+  color: brown;
   width: 400px;
   margin: 20px auto;
   border: 1px solid black; }

@@ -1,0 +1,10 @@
+@function color-contrast($colore){
+
+
+    @if (lightness($colore) > 50 ){
+        @return brown;
+    } @else {
+        @return white;
+    }
+
+}

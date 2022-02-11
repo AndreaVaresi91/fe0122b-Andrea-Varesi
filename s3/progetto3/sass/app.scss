@@ -36,16 +36,20 @@
      height: 281px; ;
  }
 
+ 
+        //BENVENUTO//
  h1 {
-     color: brown;
+     
      background-color: $biscotto;
+     color: color-contrast(bisque);
      width: 400px;
-     margin: 20px auto;
+     margin: 20px auto; 
      border: 1px solid black;
  }
 
+        //PARTNESHIP//
  h2 {
-     color: brown;
+     color: color-contrast(bisque);
      background-color: $biscotto;
      width: 400px;
      margin: 20px auto;
@@ -91,7 +95,7 @@
      }
  }
 
- //media query//
+ //media query// 
 
  @media screen and (max-width:570px) {
      .bordo {width:100%;}
