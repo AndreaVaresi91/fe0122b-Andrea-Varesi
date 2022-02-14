@@ -1,14 +1,16 @@
  //funzione//
- 
+
  @import "function";
 
 
-//variabili//
+ //variabili//
  $marrone:brown;
  $biscotto: bisque;
  $ombre: 5px 5px 10px 5px brown;
 
-.colore {color:white}
+ .colore {
+     color: white
+ }
 
 
 
@@ -16,22 +18,29 @@
      background-image: url(../img/sfondo-repeat.webp);
      background-repeat: repeat;
      background-position: center;
+     
  }
 
  header {
      margin-bottom: 30px;
 
-   nav  {color: white;}
-    
- }  
+     nav {
+         color: white;
+     }
 
- .testa {color:$biscotto;}
+ }
 
- 
-            
+ .testa {
+     color: $biscotto;
+ }
 
 
- .lineare {padding: 0 30px;}
+
+
+
+ .lineare {
+     padding: 0 30px;
+ }
 
 
 
@@ -39,21 +48,22 @@
      background-color: $biscotto;
      box-shadow: $ombre;
      text-align: center;
-     height: 281px; ;
+     height: 281px;
+     ;
  }
 
- 
-        //BENVENUTO//
+
+ //BENVENUTO//
  h1 {
-     
+
      background-color: $biscotto;
      color: color-contrast(bisque);
      width: 400px;
-     margin: 20px auto; 
+     margin: 20px auto;
      border: 1px solid black;
  }
 
-        //PARTNESHIP//
+ //PARTNESHIP//
  h2 {
      color: color-contrast(bisque);
      background-color: $biscotto;
@@ -62,10 +72,13 @@
      border: 1px solid black;
  }
 
- .mar {color: $marrone;}
+ .mar {
+     color: $marrone;
+ }
 
  .bordo {
-     box-shadow: $ombre; margin-bottom: 30px;
+     box-shadow: $ombre;
+     margin-bottom: 30px;
  }
 
 
@@ -76,7 +89,10 @@
  .card-body {
      background-color: $biscotto;
      box-shadow: $ombre;
-     &:hover {transform: scale(1.1);}
+
+     &:hover {
+         transform: scale(1.1);
+     }
  }
 
 
@@ -87,11 +103,13 @@
      border: 1px solid black;
      margin: 30px auto;
      text-align: center;
-     background-color:$biscotto;
-     
+     background-color: $biscotto;
+
  }
 
- .ruota {transform: rotate(180deg);}
+ .ruota {
+     transform: rotate(180deg);
+ }
 
 
 
@@ -100,30 +118,39 @@
      height: 100px;
 
      p {
-         color:$biscotto;
+         color: $biscotto;
          padding-top: 25px;
      }
  }
 
  //bottone torna su//
 
-  #su {text-decoration: none;
-            background-color: rgba(231, 231, 70, 0.952);
-            font-size: 40px;
-            color: $marrone;
-            border-radius: 50%;
-            border: 1px solid $marrone;
-            position: fixed;
-            right: 5px;
-            top:85vh;
-            
-}
+ #su {
+     text-decoration: none;
+     background-color: rgba(231, 231, 70, 0.952);
+     font-size: 40px;
+     color: $marrone;
+     border-radius: 50%;
+     border: 1px solid $marrone;
+     position: fixed;
+     right: 5px;
+     top: 85vh;
+
+ }
 
  //media query// 
 
  @media screen and (max-width:570px) {
-     .bordo {width:100%;}
-     .h {width: 100%;}
-     .corpo {height: 100%;}
-     
+     .bordo {
+         width: 100%;
+     }
+
+     .h {
+         width: 100%;
+     }
+
+     .corpo {
+         height: 100%;
+     }
+
  }
