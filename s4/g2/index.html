@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+
+<body>
+
+
+    <script>
+        var nome = "Paperon";
+        var cognome = "De Paperoni";
+        var anni = 70;
+        const città = "Paperopoli";
+        var nipo1 = "Qui";
+        var nipo2 = "Quo";
+        var nipo3 = "Qua";
+        var num1 = 5;
+        var num2 = 6;
+        var num3 = 7;
+        var num4 = (num1 + num2 + num3);
+
+        alert("Io sono: " + " " + nome + " " + cognome);
+        alert("Vivo a: " + " " + città + " " + "da esattamente " + " " + anni + " " + "anni");
+
+        document.write("Mi chiamo" + " " + nome + " " + cognome);
+
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+        var nipote = "Paolino Paperino"; {
+            let nome = nipote
+            document.write("Il mio nipote preferito è: " + " " + nome);
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <!--calcoli-->
+    <script>
+        document.write("L età dei miei nipoti sommata insieme è di: " + (num1 + num2 + num3));
+    </script>
+
+    <br>
+    <br>
+
+
+    <script>
+        document.write("La mia età meno quella dei miei nipoti è di: " + (anni - num4));
+    </script>
+
+    <br>
+    <br>
+
+
+    <!--provabooleano-->
+    <script>
+        document.write(anni > num4);    
+    </script>
+    <br>
+    <script>
+        document.write(anni < num4);
+    </script>
+
+    <!--form-->
+    <h3>Per candidarti come nuovo sindaco di Paperopoli compila il form qui sotto!</h3>
+
+    <div class="modulo">
+    <form name="invio_dati" action="Epicode.php" method="post">
+        <p>Nome</p>
+        <p><input name="nome" placeholder="Nome"></p>
+        <p>Mail</p>
+        <p><input name="mail" placeholder="Email"></p>
+        <p>
+            <input name="sesso" type="radio" value="maschio"> maschio
+            <input name="sesso" type="radio" value="femmina"> femmina
+        </p>
+        <p>
+            <textarea name="messaggio" rows="5" cols="50" placeholder="inserisci un messaggio"></textarea>
+        </p>
+        <p>
+            <input name="invia" type="submit"  onclick="Dati()"  >
+        </p>
+    </form>
+</div>
+
+    <!--funzione-->
+
+    <script>
+        function Dati() {
+            document.write("Buona fortuna")
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/stile.js"></script>
+</body>
+
+</html>
