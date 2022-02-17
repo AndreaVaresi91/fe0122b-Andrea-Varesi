@@ -1,0 +1,32 @@
+body {font-family: 'Festive', cursive;}
+
+#calcolatrice {
+    background-image: linear-gradient(to bottom, rgb(231, 34, 70), rgb(196, 143, 152));
+    width: 600px; height: 600px; margin: 100px auto; border-radius: 15px; border: 5px solid palevioletred;}
+
+
+#display {width: 400px; height: 80px;}
+
+
+.number {display: inline-block; text-align: center;}
+
+
+input {width: 80px; height: 80px; margin-top: 15px; cursor:pointer;
+         background-color:beige; color: black;
+        border-radius: 15px; font-size: 30px;
+}
+
+
+.risultato input{width: 300px;}
+
+#schermo {text-align: center;}
+
+.container {text-align: center;}
+
+.risultato {text-align: center;}
+
+
+
+h1 {text-align: center; font-size: 70px;}
+h2 {text-align: center; font-size: 60px;}
+

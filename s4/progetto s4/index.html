@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Chiedimi se sono calcolatrice</h1>
+    <h2>Prova tu stesso e guarda il risultato!</h2>
+
+
+<div id="calcolatrice">
+    <div id="grande">
+      
+        
+
+    <div id="schermo"><input type="text" name="display" id="display" placeholder="0" readonly="readonly"></div>
+
+<div class="container">
+    <div class="number"> <input type=submit id="9" value ="9" onclick="tasto(9)" ></div>
+    <div class="number"> <input type=submit id="8" value ="8" onclick="tasto(8)" ></div>
+    <div class="number"> <input type=submit id="7" value ="7" onclick="tasto(7)" ></div>
+    <div class="number"> <input type=submit id="+" value ="+" onclick="tasto('+')" ></div>
+</div>
+
+<div class="container">
+    <div class="number"> <input type=submit id="6" value ="6" onclick="tasto(6)" ></div>
+    <div class="number"> <input type=submit id="5" value ="5" onclick="tasto(5)" ></div>
+    <div class="number"> <input type=submit id="4" value ="4" onclick="tasto(4)" ></div>
+    <div class="number"> <input type=submit id="-" value ="-" onclick="tasto('-')" ></div>
+</div>
+
+<div class="container">
+    <div class="number"> <input type=submit id="3" value ="3" onclick="tasto(3)" ></div>
+    <div class="number"> <input type=submit id="2" value ="2" onclick="tasto(2)" ></div>
+    <div class="number"> <input type=submit id="1" value ="1" onclick="tasto(1)" ></div>
+    <div class="number"> <input type=submit id="." value ="." onclick="tasto('.')" ></div>
+</div>
+
+<div class="container">
+    <div class="number"> <input type=submit id="0" value ="0" onclick="tasto(0)" > </div>
+    <div class="number"> <input type=submit id="X" value ="X" onclick="tasto('*')" ></div>
+    <div class="number"> <input type=submit id="/" value ="/" onclick="tasto('/')" ></div>
+    <div class="number"> <input type=submit id="C" value ="C" onclick="cancel()" ></div>
+</div>
+
+    <div class="risultato"> <input type=submit id="=" value ="=" onclick="totale()" ></div>
+</div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/stile.js"></script>   
+</body>
+</html>
