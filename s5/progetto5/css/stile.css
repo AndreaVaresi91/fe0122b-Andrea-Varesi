@@ -1,8 +1,15 @@
+body {
+    padding: 20px;
+    background-color: antiquewhite;
+}
 
- .pointer{
-     cursor: pointer;
-    }
-    
-button{
-    background-color: aqua;
-}    
+#add {
+    border-radius: 20px;
+    background-color: rgb(253, 149, 21);
+    font-weight: bold;
+    color: black;
+}
+
+nav {
+    background-color: brown;
+}
