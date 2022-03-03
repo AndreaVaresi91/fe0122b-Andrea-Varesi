@@ -4,9 +4,6 @@ $(() => {
         "piangere", "ridere", "amare", "amare1", "spavento", "shock"];
 
 
-
-
-
     for (var i = 0; i < 16; i++) {
 
         let random = Math.floor(Math.random() * mieImg.length);
@@ -28,7 +25,7 @@ $(() => {
         $("#clicks").text(counter)
 
         if (immaginCliccata.length < 2) {
-            
+
             $(this).children().show("slow")
 
             let imgId = $(this).children().attr("id")
@@ -52,18 +49,7 @@ $(() => {
                 }
             }
         }
-
-
     });
-
-
-
-
-
-
-
-
-
 });
 
 
