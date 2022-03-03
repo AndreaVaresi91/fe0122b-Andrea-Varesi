@@ -1,0 +1,18 @@
+#box {
+    width: 1px;
+    height: 100px;
+    background: blue;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: rgb(248, 10, 236);
+    position: absolute;
+}
+
+#testo {
+    font-size: 30px;
+}
+
+
+button {
+    font-size: 18px;
+}
