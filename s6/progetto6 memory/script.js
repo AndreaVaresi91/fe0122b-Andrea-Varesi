@@ -12,11 +12,11 @@ $(() => {
 
         $("#memory").append('<div class="images" id="emoji"' + i + '"><img id="' + i + '" src="img/' + imgEliminata + '.png"  width="130" height="130" /> </div>');
 
-        /* $('#memory').append('<div class="images" id="emoji"' + i + '"><img id="' + i + '" src="img/' + imgEliminata + '.png"  width="130" height="130"></div>'); */ //GIULIO STYLE //
-
+      
     }
 
-    let immaginCliccata = []
+    let immaginCliccata = [];
+    
 
     $(".images").click(function () {
         let counter = $("#clicks").text()
@@ -34,20 +34,23 @@ $(() => {
             let infoImg = { id: imgId, src: imgSrc }
 
             immaginCliccata.push(infoImg)
+            
 
             if (immaginCliccata.length == 2) {
                 if (immaginCliccata[0].src == immaginCliccata[1].src) {
 
-                    immaginCliccata = [];
+                    immaginCliccata = []
+                    
                 } else {
                     setTimeout(function () {
                         $("#" + immaginCliccata[0].id).hide()
                         $("#" + immaginCliccata[1].id).hide()
-
+                        
                         immaginCliccata = [];
                     }, 1000);
                 }
             }
+           
         }
     });
 });
