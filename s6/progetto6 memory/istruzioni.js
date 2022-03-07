@@ -1,25 +1,4 @@
  
-  if(vittoria.lenght == 16){alert("Hai vinto!")}
-  vittoria.push(infoImg)
-  let vittoria = [];
- let v =[]
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  //genera ciclicamente 16 div contenenti le immagini pescate randomicamente
         //crea un ciclo che si fermi alla sedicesima iterazione
             
