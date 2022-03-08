@@ -3,50 +3,87 @@ let bottone = document.querySelector(".bottone");
 
 bottone.addEventListener("click", function (e) {
     e.preventDefault();
+
     let arr = document.querySelectorAll(".pippo");
+
+    var pippo1 = document.getElementById("username").value;
+    var pippo2 = document.getElementById("emailUno").value;
+    var pippo3 = document.getElementById("pswUno").value;
+
+    var emailDue = document.getElementById("emailDue").value;
+
+
+
+    var controllo = true;
+
+
 
     arr.forEach(elemento => {
         let valore = elemento.value
-        
-        var emailUno = document.getElementById("emailUno").value;
-        var emailDue = document.getElementById("emailDue").value;
-       
+
 
         if (valore == "") {
             elemento.style.border = "1px solid red";
+            controllo = false;
 
-        } else if (emailUno != emailDue) {
-            alert("le Email non corrispondono")
-        } else {
+        }
+
+        else {
             elemento.style.border = "";
         }
 
 
     });
-    function memorizzaDati(utenteSalvato) {
-        var pippo1 = document.getElementById("username").value;
-        var pippo2 = document.getElementById("emailUno").value;
-        var pippo3 = document.getElementById("password").value;
 
-        class User {
-            constructor(username, email, password) {
+    if (pippo2 != emailDue) {
+        alert("le Email non corrispondono")
+        controllo = false;
+    }
 
-                this.username = username
-                this.email = email
-                this.password = password
-            }
-        }
+    else {
+        // elemento.style.border = "";
+    }
 
-        var lista = new User(pippo1, pippo2, pippo3);
-        
-        
-        let elementiSalvati = localStorage.getItem("lista")
-        let dataBase = elementiSalvati == null ? [] : JSON.parse(elementiSalvati)
-        dataBase.push(lista);
-        localStorage.setItem("lista", JSON.stringify(dataBase))
+
+    if (controllo) {
+        var nuovoUtente = new User(pippo1, pippo2, pippo3); //blocco di sicurezza//
+        memorizzaDati(nuovoUtente);
+    };
+});
+
+
+
+class User {
+    constructor(username, email, password) {
+
+        this.username = username
+        this.email = email
+        this.password = password
+    }
+}
+
+function memorizzaDati(newUser) {
+    let elementiSalvati = localStorage.getItem("Utenti")
+    let dataBase = elementiSalvati == null ? [] : JSON.parse(elementiSalvati)
+    // qui inserisci il controllo per verificare se la mail inserita dall utente appartiene ad un utente gia registrato
+    // preferibilmente utilizza il metodo find
+    var target = dataBase.find(oldUser => oldUser.email == newUser.email)
+    if (target == undefined) {
+        dataBase.push(newUser);
+        localStorage.setItem("Utenti", JSON.stringify(dataBase));
 
     }
-    memorizzaDati();
-});
+}
+                                                   //PER DOMATTINA//
+// DA FARE LOGIN CHE RIMANDA IN UNA
+// PAGINA CON TABELLA CON TUTTI UTENTI REGISRATI
+// UNA COLONNA DELLA TABELLA DOVRA CONTENERE UN TASTO ELIMINA PER OGNI UTENTE
+// AL CLICK L UTENTE VIENE ELIMINATO DAGLI UTENTI REGISTRATI //SPLICE//
+
+
+
+
+
+
 
 
