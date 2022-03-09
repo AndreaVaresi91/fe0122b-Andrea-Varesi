@@ -36,7 +36,7 @@ bottone.addEventListener("click", function (e) {
     });
 
     if (pippo2 != emailDue) {
-        alert("le Email non corrispondono")
+       alert("controlla le email");
         controllo = false;
     }
 
@@ -48,14 +48,21 @@ bottone.addEventListener("click", function (e) {
     if (controllo) {
         var nuovoUtente = new User(pippo1, pippo2, pippo3); //blocco di sicurezza//
         memorizzaDati(nuovoUtente);
+
+        setTimeout(function(){
+            window.location = "login.html"
+        }, 1000);
+        
+
     };
 });
 
 
 
 class User {
-    constructor(username, email, password) {
+    constructor(id, username, email, password) {
 
+        this.id = id
         this.username = username
         this.email = email
         this.password = password
@@ -73,12 +80,30 @@ function memorizzaDati(newUser) {
         localStorage.setItem("Utenti", JSON.stringify(dataBase));
 
     }
+    else { alert("Non puoi  registrarti con una email già utilizzata")};
+
+
 }
+
+
+
                                                    //PER DOMATTINA//
 // DA FARE LOGIN CHE RIMANDA IN UNA
 // PAGINA CON TABELLA CON TUTTI UTENTI REGISRATI
 // UNA COLONNA DELLA TABELLA DOVRA CONTENERE UN TASTO ELIMINA PER OGNI UTENTE
 // AL CLICK L UTENTE VIENE ELIMINATO DAGLI UTENTI REGISTRATI //SPLICE//
+
+
+
+
+
+/* var target2 = dataBase.find(oldUser2 => oldUser2.username == newUser.username)
+    if (target2 == undefined) {
+        dataBase.push(newUser);
+        localStorage.setItem("Utenti", JSON.stringify(dataBase));
+
+    }
+    else { alert("Usernme già esistente")}; */
 
 
 
