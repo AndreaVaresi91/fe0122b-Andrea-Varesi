@@ -1,4 +1,4 @@
-let bottone = document.querySelector(".bottone");
+let bottone = document.querySelector(".bottone"); // creo variabile bottone
 
 
 bottone.addEventListener("click", function (e) {
@@ -14,12 +14,12 @@ bottone.addEventListener("click", function (e) {
 
 
 
-    var controllo = true;
+    var controllo = true; // imposto variabile di controllo
 
 
 
-    arr.forEach(elemento => {
-        let valore = elemento.value
+    arr.forEach(elemento => {  // ciclo la variabile arr con for each
+        let valore = elemento.value // elemento.value si riferisce al valore di ogni elemento dell arr
 
 
         if (valore == "") {
@@ -36,7 +36,7 @@ bottone.addEventListener("click", function (e) {
     });
 
     if (pippo2 != emailDue) {
-       alert("controlla le email");
+        alert("controlla le email");
         controllo = false;
     }
 
@@ -49,10 +49,11 @@ bottone.addEventListener("click", function (e) {
         var nuovoUtente = new User(pippo1, pippo2, pippo3); //blocco di sicurezza//
         memorizzaDati(nuovoUtente);
 
-        setTimeout(function(){
+
+        setTimeout(function () {
             window.location = "login.html"
         }, 1000);
-        
+           
 
     };
 });
@@ -60,9 +61,9 @@ bottone.addEventListener("click", function (e) {
 
 
 class User {
-    constructor(id, username, email, password) {
+    constructor( username, email, password) {
 
-        this.id = id
+        
         this.username = username
         this.email = email
         this.password = password
@@ -74,13 +75,19 @@ function memorizzaDati(newUser) {
     let dataBase = elementiSalvati == null ? [] : JSON.parse(elementiSalvati)
     // qui inserisci il controllo per verificare se la mail inserita dall utente appartiene ad un utente gia registrato
     // preferibilmente utilizza il metodo find
-    var target = dataBase.find(oldUser => oldUser.email == newUser.email)
+    var target = dataBase.find(oldUser => oldUser.email == newUser.email);
+
     if (target == undefined) {
+
         dataBase.push(newUser);
         localStorage.setItem("Utenti", JSON.stringify(dataBase));
 
+        /* setTimeout(function () {
+             window.location = "login.html"
+         }, 1000); */
+
     }
-    else { alert("Non puoi  registrarti con una email già utilizzata")};
+    else { alert("Non puoi  registrarti con una email già utilizzata") };
 
 
 }
