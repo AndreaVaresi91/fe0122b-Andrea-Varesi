@@ -6,8 +6,8 @@
 
 
 let button = document.getElementById("accedi");
-button.addEventListener("click", function () {
-
+button.addEventListener("click", function (e) {
+    e.preventDefault();
     var email1 = document.querySelector("#email1").value;
     var password1 = document.querySelector("#passw1").value;
     let dataBase = localStorage.getItem("Utenti") == null ? [] : JSON.parse(localStorage.getItem("Utenti"));
