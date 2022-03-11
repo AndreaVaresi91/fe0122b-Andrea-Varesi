@@ -7,13 +7,15 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
         data.forEach(function (elemento) {
             var select = document.querySelector('#tab')
 
-            let modifica = document.createElement('button')
+            let modifica = document.createElement('a')
             modifica.innerText = "Modifica"
+            modifica.href = "/modificaUtente.html?id" + elemento.id
+            modifica.classList.add("btnModifica")
 
             let cancella = document.createElement('button')
             cancella.innerText = "Cancella"
             cancella.classList.add("canc")
-            cancella.setAttribute("data-id", elemento.id);
+
 
 
             let riga = document.createElement('tr');
@@ -32,13 +34,14 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
                     riga.append(cancella)
                 }
             }
+
             let elimina = riga.querySelector(".canc")
             elimina.addEventListener("click", function () {
-                riga.remove();
-                var attributo = this.getAttribute("data-id")
 
 
-                fetch('https://sofin.wp-admin.it/public/api/v1/user/id=' + `${attributo}`, {
+
+
+                fetch('https://sofin.wp-admin.it/public/api/v1/user/' + elemento.id, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
@@ -47,6 +50,8 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
                     .then(response => response.json())
                     .then(data => {
                         alert('Utente Eliminato')
+                        riga.remove();
+
                     })
 
 
