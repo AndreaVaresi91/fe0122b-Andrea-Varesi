@@ -1,7 +1,7 @@
 
 
-/*var param = URLSearchParams(location.search)
-var id = param.get("id")*/
+var param = new URLSearchParams(location.search)
+var id = param.get("id")
 
 fetch('https://sofin.wp-admin.it/public/api/v1/user')
     .then(response => response.json())
@@ -26,9 +26,9 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
             let newEmail = document.querySelector("#email1").value
            
 
-            fetch(
-                'https://sofin.wp-admin.it/public/api/v1/user/' +id, {
-                method: 'GET', // or 'PUT' POST GET DELETE
+            
+            fetch('https://sofin.wp-admin.it/public/api/v1/user/' + id, {
+                method: 'PUT', // or 'PUT' POST GET DELETE
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -43,44 +43,13 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
              )
              .then(response => response.json())
              .then(data => {
+                 console.log(data)
              alert('Utente aggiornato')
-             setTimeout(function(){
-                 window.location ="tabella.html";
-             }, 2000)
+            // setTimeout(function(){
+               //  window.location ="tabella1.html";
+           //  }, 2000)
              }) 
 
         })
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    });
+});
