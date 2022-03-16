@@ -84,3 +84,15 @@ console.log(giuliano.getTasseInps());
 console.log(giuliano.getTasseIrpef());
 console.log(giuliano.getRedditoAnnuoNetto());
 //mandare a schermo//
+//manda a schermo tutto bisogna selezionare solo i dati degli utenti
+var persone = [];
+persone.push(andreino, lorenzino, capitanMike, giuliano);
+console.log(persone);
+persone.forEach(function (elemento) {
+    for (var prop in elemento) {
+        var bacheca = document.querySelector("#container");
+        var creaUtenti = document.createElement("p");
+        creaUtenti.innerText = elemento[prop];
+        bacheca.append(creaUtenti);
+    }
+});
