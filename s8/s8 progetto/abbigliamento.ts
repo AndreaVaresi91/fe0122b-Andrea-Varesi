@@ -9,6 +9,10 @@ fetch("Abbigliamento.json")
            
             let riga = document.createElement("tr")
             tab.append(riga)
+
+            /*riga.addEventListener("click", function(){
+                
+            })*/
             
             
             
