@@ -2,6 +2,12 @@ interface Smartphone {
     carica: number,
     nChiamate: number,
 
+    ricarica(unaRicarica: any): void 
+    chiamata(minutiDurata: any): void
+    numbero404(): number 
+    getNumeroChiamate(): number
+    azzeraChiamate(): void
+
 }
 
 class User implements Smartphone {
@@ -91,21 +97,21 @@ class UCapitanMike extends User {
 
 let paperino = new UVodafone(30, 5);
 console.log(paperino);
-console.log(paperino.ricarica(5));
+paperino.ricarica(5);
 console.log(paperino);
 paperino.chiamata(20);
 console.log(paperino);
 
 let topolino = new UTim(30, 5);
 console.log(topolino);
-console.log(topolino.ricarica(5));
+topolino.ricarica(5);
 console.log(topolino);
 topolino.chiamata(20);
 console.log(topolino);
 
 let pippo = new UCapitanMike(30, 5);
 console.log(pippo);
-console.log(pippo.ricarica(5));
+pippo.ricarica(5);
 console.log(pippo);
 pippo.chiamata(20);
 console.log(pippo);
