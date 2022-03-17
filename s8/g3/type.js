@@ -96,3 +96,4 @@ persone.forEach(function (elemento) {
         bacheca.append(creaUtenti);
     }
 });
+var pippo;
