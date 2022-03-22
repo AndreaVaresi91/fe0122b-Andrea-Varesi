@@ -24,7 +24,7 @@ fetch("regioni.json")
 
     });
 
-class Province {
+/*class Province {
 
     constructor(prov_it, prov_nome, prov_reg, prov_url) {
         this.prov_it = prov_it
@@ -33,30 +33,49 @@ class Province {
         this.prov_url = prov_url
 
     }
-}
+}*/
 
 
-reg.addEventListener("click", function () {
-    let valore = reg.value
-    //console.log(valore);
-    let prov = document.querySelector("#province");
 
-    fetch("province.json")
-        .then(data => {
-            return data.json();
-        })
-        .then(province => {
-            console.table(province);
-
+fetch("province.json")
+    .then(data => {
+        return data.json();
+    })
+    .then(province => {
+        console.table(province);
+        reg.addEventListener("click", function () {
+            let valore = reg.value
+            //console.log(valore);
+            let prov = document.querySelector("#province");
+            let svuota = prov.querySelectorAll("option")
+            svuota.forEach(v => {
+                v.remove();
+            })
             for (var i = 0; i < province.length; i++) {
                 if (province[i].prov_reg == valore) {
                     var campi = document.createElement("option")
                     campi.innerText = province[i].prov_nome;
+
                     prov.append(campi)
+                    console.log(province[i].prov_url)
+                    document.querySelector("#stemmi").setAttribute("src", province[i].prov_url)
                 }
             }
 
+            prov.addEventListener("click", function () {
+
+                let provSelezionata = prov.value
+                console.log(provSelezionata)
+
+
+                document.querySelector("#stemmi2").setAttribute("src", "assets/img/province/" + provSelezionata + ".png")
+            });
 
         });
-});
+
+
+    });
+
+
+
 
